@@ -23,7 +23,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 main {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     padding: 0;
     min-height: fit-content;
@@ -36,7 +37,8 @@ main {
     text-align: center;
     font-weight: 400;
     color: var(--Grayish-Blue);
-    letter-spacing: -0.4px;
+    letter-spacing: -0.5px;
+    margin: 26px 0 28px 0;
 }
 h1 {
     font-weight: 400;
@@ -97,10 +99,12 @@ img {
 }
 @media (min-width: 700px) {
     body {
-        justify-content: center;
+        justify-content: end;
         min-height: 100vh;
     }
     main {
+        justify-self: center;
+        display: grid;
         width: 678px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -123,19 +127,18 @@ img {
     .card {
         margin: auto;
     }
-    .attribution {
-        margin-top: 173px;
-    }
 }
 @media (min-width: 1200px) {
     body {
         min-height: 100vh;
+        justify-content: flex-end;
     }
     main {
+        display: grid;
         margin-top: 12px;
         gap: 28px;
         width: 1112px;
-        height: 772px;
+        height: 798px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
@@ -189,13 +192,14 @@ img {
         grid-row-end: 4;
     }
     .attribution {
-        margin-top: 14px;
+        margin-top: 32px;
     }
 }
 .attribution { 
     font-size: 11px; 
     text-align: center; 
     letter-spacing: 2px;
+    margin-top: 32px;
 }
 .attribution a { 
     color: var(--Blue);
