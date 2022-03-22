@@ -135,7 +135,6 @@ img {
     }
     main {
         display: grid;
-        margin-top: 12px;
         gap: 28px;
         width: 1112px;
         height: 798px;
@@ -191,15 +190,12 @@ img {
         grid-row-start: 2;
         grid-row-end: 4;
     }
-    .attribution {
-        margin-top: 38px;
-    }
 }
 .attribution { 
     font-size: 11px; 
     text-align: center; 
     letter-spacing: 2px;
-    margin-top: 32px;
+    margin-top: 40px;
 }
 .attribution a { 
     color: var(--Blue);
