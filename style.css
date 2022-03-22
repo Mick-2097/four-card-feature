@@ -132,6 +132,7 @@ img {
         min-height: 100vh;
     }
     main {
+        margin-top: 12px;
         gap: 28px;
         width: 1112px;
         height: 772px;
