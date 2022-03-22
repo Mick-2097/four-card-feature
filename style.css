@@ -1,0 +1,204 @@
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: var(--Very-Light-Gray);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    display: grid;
+    gap: 30px;
+    padding: 0;
+    min-height: fit-content;
+    justify-self: flex-end;
+}
+.intro {
+    width: 312px;
+    height: 223px;
+    background-color: var(--Very-Light-Gray);
+    text-align: center;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    letter-spacing: -0.4px;
+}
+h1 {
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    margin: 50px 0 2px 0;
+    letter-spacing: -0.25px;
+}
+span {
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+    margin: 0 0 10px 0;
+}
+.card {
+    list-style: none;
+    background-color: white;
+    width: 312px;
+    height: 222px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 12px 25px -15px var(--Grayish-Blue);
+}
+.line {
+    width: 100%;
+    height: 4px;
+}
+.cyan {
+    background: var(--Cyan);
+}
+.red {
+    background: var(--Red);
+}
+.orange {
+    background: var(--Orange);
+}
+.blue {
+    background: var(--Blue);
+}
+h2 {
+    color: var(--Very-Dark-Blue);
+    font-size: 20px;
+    margin: 22px 0 0 28px;
+}
+.card p {
+    color: var(--Grayish-Blue);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.8;
+    margin: 3px 0 0 29px;
+    letter-spacing: -0.1px;
+}
+img {
+    width: 57px;
+    height: 57px;
+    display: flex;
+    right: 0;
+    left: 0;
+    margin: 30px 28px 23px auto;
+}
+@media (min-width: 700px) {
+    body {
+        justify-content: center;
+        min-height: 100vh;
+    }
+    main {
+        width: 678px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .intro {
+        width: 510px;
+        margin: auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    h1 {
+        margin: 46px 0 0 0;
+        letter-spacing: -0.3px;
+        font-size: 36px;
+        line-height: 1.425;
+    }
+    span {
+        letter-spacing: 0.1px;
+    }
+    .card {
+        margin: auto;
+    }
+    .attribution {
+        margin-top: 173px;
+    }
+}
+@media (min-width: 1200px) {
+    body {
+        min-height: 100vh;
+    }
+    main {
+        margin-top: 40px;
+        gap: 28px;
+        width: 1112px;
+        height: 772px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .intro {
+        height: 250px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .card {
+        width: 352px;
+        height: 250px;
+    }
+    h2 {
+        margin: 27px 0 8px 32px;
+        letter-spacing: -0.2px;
+    }
+    .card p {
+        margin: 0 0 0 32px;
+        width: 262px;
+    }
+    .card img {
+        margin: 38px 34px 14px auto;
+        width: 64px;
+        height: 64px;
+    }
+    .team {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3
+    }
+    .karma {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .supervisor {
+        margin: auto 0 auto 0;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .calculator {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .attribution {
+        margin-top: 94px;
+    }
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    letter-spacing: 2px;
+}
+.attribution a { 
+    color: var(--Blue);
+    font-size: 12px; 
+    font-weight: bold;
+}
